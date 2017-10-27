@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+	ion-header{
+		ion-navbar{
+			ion-title{
+				font-style: italic;
+				text-align: center;
+			}
+		}
+	}
+
+	.card-menu
+	{
+		background: linear-gradient(to right,  #f77074, #fa9369);
+		border-radius: 20px;
+		color: white;
+		padding: 20px;
+		
+		ion-card-header
+		{
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		ion-card-content
+		{
+			font-size: 20px;
+		}
+	}

@@ -25511,3 +25511,26 @@ ion-navbar.toolbar {
   height: calc(46px + constant(safe-area-inset-top));
   min-height: calc(46px + constant(safe-area-inset-top));
 }
+
+ion-header ion-navbar ion-title {
+  font-style: italic;
+  text-align: center;
+}
+
+.card-menu {
+  background: -webkit-gradient(linear, left top, right top, from(#f77074), to(#fa9369));
+  background: linear-gradient(to right, #f77074, #fa9369);
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+}
+
+.card-menu ion-card-header {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card-menu ion-card-content {
+  font-size: 20px;
+}

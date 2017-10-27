@@ -33,4 +33,9 @@ export class HomePage {
 	removeItem(id) {
 		this.firebaseProvider.removeItem(id);
 	}
+
+	goToMateriPage() {
+		this.navCtrl.push("MateriPage");
+		console.log("card clicked");
+	}
 }

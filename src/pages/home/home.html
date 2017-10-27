@@ -1,10 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>E-book</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-row>
     <ion-col col-9>
       <ion-item>
@@ -26,4 +26,23 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+
+  <ion-card class="card-menu" (click)="goToMateriPage()">
+    <ion-card-header>
+      Bab 1
+    </ion-card-header>
+
+    <ion-card-content>
+      Hierarchical Model
+    </ion-card-content>
+  </ion-card>
+   <ion-card class="card-menu">
+    <ion-card-header>
+      Bab 2
+    </ion-card-header>
+
+    <ion-card-content>
+      Ketergantungan Fungsional
+    </ion-card-content>
+  </ion-card>
 </ion-content>
