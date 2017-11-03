@@ -5,44 +5,14 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-row>
-    <ion-col col-9>
-      <ion-item>
-        <ion-input type="text" [(ngModel)]="newItem" placeholder="New Materi"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <button ion-button (click)="addItem()">Add!</button>
-    </ion-col>
-  </ion-row>
- 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of materi | async">
-      <ion-item>
-        {{ item }}
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger" icon-only (click)="removeItem(item.$name)"><ion-icon name="trash"></ion-icon></button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
 
-  <ion-card class="card-menu" (click)="goToMateriPage()">
-    <ion-card-header>
-      Bab 1
+  <ion-card class="card-menu" *ngFor="let item of materi | async" (click)="goToMateriPage()">
+    <ion-card-header class="judulBab">
+      {{ item.payload.key }}
     </ion-card-header>
 
     <ion-card-content>
-      Hierarchical Model
-    </ion-card-content>
-  </ion-card>
-   <ion-card class="card-menu">
-    <ion-card-header>
-      Bab 2
-    </ion-card-header>
-
-    <ion-card-content>
-      Ketergantungan Fungsional
+      {{ item.payload.val().namaBab }}
     </ion-card-content>
   </ion-card>
 </ion-content>
