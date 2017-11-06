@@ -11,13 +11,24 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
   export class FirebaseProvider {
     link = this.afd.list('/materi/');
-    
+    item = [];
+
     constructor(public afd : AngularFireDatabase) {
     }
 
     getMateri(){
       console.log("GET!");
-      console.log(this.link.snapshotChanges());
+      this.link.snapshotChanges().subscribe(actions => {
+        actions.forEach(action => {
+          console.log(action.type);
+          console.log(action.key);
+          // console.log(action.payload.val());
+          Object.keys(action.payload.val()).forEach(key=> {
+            this.item.push(key);
+          });
+          console.log(this.item[1]);
+        });
+      });
       return this.link.snapshotChanges();
     }
 
