@@ -1,3 +1,23 @@
+.card-menu
+	{
+		background: linear-gradient(to right,  primary, secondary);
+		border-radius: 20px;
+		color: white;
+		padding: 20px;
+		
+		ion-card-header
+		{
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		ion-card-content
+		{
+			font-size: 20px;
+		}
+	}
+
 page-home {
 	.judulBab:first-letter {
 		text-transform: uppercase;

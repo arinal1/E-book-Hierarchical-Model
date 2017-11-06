@@ -16,29 +16,10 @@
 // automatically applied to the <body> element in the app.
 	ion-header{
 		ion-navbar{
+			background: linear-gradient(to right,  primary, secondary);
 			ion-title{
 				font-style: italic;
 				text-align: center;
 			}
-		}
-	}
-
-	.card-menu
-	{
-		background: linear-gradient(to right,  #f77074, #fa9369);
-		border-radius: 20px;
-		color: white;
-		padding: 20px;
-		
-		ion-card-header
-		{
-			color: white;
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		ion-card-content
-		{
-			font-size: 20px;
 		}
 	}
