@@ -1,5 +1,4 @@
-
-	.card-menu
+.card-menu
 	{
 		background: linear-gradient(to right,  primary, secondary);
 		border-radius: 20px;
@@ -18,3 +17,9 @@
 			font-size: 20px;
 		}
 	}
+
+page-home {
+	.judulBab:first-letter {
+		text-transform: uppercase;
+	}
+}
