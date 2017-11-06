@@ -22,7 +22,7 @@ webpackEmptyAsyncContext.id = 140;
 
 var map = {
 	"../pages/materi/materi.module": [
-		429,
+		428,
 		0
 	]
 };
@@ -88,7 +88,7 @@ TabsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -123,7 +123,7 @@ AboutPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -159,7 +159,7 @@ ContactPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,12 +194,11 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"D:\Sekolah\ionic\E-book-hierarchical-model\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>E-book</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-row>\n\n    <ion-col col-9>\n\n      <ion-item>\n\n        <ion-input type="text" [(ngModel)]="newItem" placeholder="New Materi"></ion-input>\n\n      </ion-item>\n\n    </ion-col>\n\n    <ion-col>\n\n      <button ion-button (click)="addItem()">Add!</button>\n\n    </ion-col>\n\n  </ion-row>\n\n \n\n  <ion-list>\n\n    <ion-item-sliding *ngFor="let item of materi | async">\n\n      <ion-item>\n\n        {{ item }}\n\n      </ion-item>\n\n      <ion-item-options side="right">\n\n        <button ion-button color="danger" icon-only (click)="removeItem(item.$name)"><ion-icon name="trash"></ion-icon></button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n\n\n  <ion-card class="card-menu" (click)="goToMateriPage()">\n\n    <ion-card-header>\n\n      Bab 1\n\n    </ion-card-header>\n\n\n\n    <ion-card-content>\n\n      Hierarchical Model\n\n    </ion-card-content>\n\n  </ion-card>\n\n   <ion-card class="card-menu">\n\n    <ion-card-header>\n\n      Bab 2\n\n    </ion-card-header>\n\n\n\n    <ion-card-content>\n\n      Ketergantungan Fungsional\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>'/*ion-inline-end:"D:\Sekolah\ionic\E-book-hierarchical-model\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"D:\Sekolah\ionic\E-book-hierarchical-model\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>E-book</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card class="card-menu" *ngFor="let item of materi | async" (click)="goToMateriPage()">\n\n    <ion-card-header class="judulBab">\n\n      {{ item.payload.key }}\n\n    </ion-card-header>\n\n\n\n    <ion-card-content>\n\n      {{ item.payload.val().namaBab }}\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>'/*ion-inline-end:"D:\Sekolah\ionic\E-book-hierarchical-model\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */]])
 ], HomePage);
 
-var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -227,23 +226,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
-*/
+  */
 var FirebaseProvider = (function () {
     function FirebaseProvider(afd) {
         this.afd = afd;
-        console.log('Hello FirebaseProvider Provider');
+        this.link = this.afd.list('/materi/');
     }
     FirebaseProvider.prototype.getMateri = function () {
-        return this.afd.list('/materi/').valueChanges();
+        console.log("GET!");
+        console.log(this.link.snapshotChanges());
+        return this.link.snapshotChanges();
     };
-    FirebaseProvider.prototype.addItem = function (name) {
-        console.log("add");
-        this.afd.list('/materi/').push(name);
+    FirebaseProvider.prototype.addItem = function (nama) {
+        console.log("Tambah " + nama);
+        this.link.push({ nama: nama });
     };
-    FirebaseProvider.prototype.removeItem = function (id) {
-        console.log('hapus!');
-        // this.afd.list('/materi/').remove(id);
-        this.afd.list('/materi/').remove('KwrTylxzfJFC1VhwZA5');
+    FirebaseProvider.prototype.removeItem = function (key) {
+        console.log("Hapus " + key);
+        this.link.remove(key);
     };
     return FirebaseProvider;
 }());
@@ -256,13 +256,13 @@ FirebaseProvider = __decorate([
 
 /***/ }),
 
-/***/ 277:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(292);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -270,7 +270,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 293:
+/***/ 292:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -278,15 +278,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_about_about__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__(427);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angularfire2_database__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angularfire2__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_firebase_firebase__ = __webpack_require__(230);
@@ -311,12 +311,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDlIPfhUMTjd2N-xSb5stL9jiJx-lqfSv0",
-    authDomain: "ebook-a85f3.firebaseapp.com",
-    databaseURL: "https://ebook-a85f3.firebaseio.com",
-    projectId: "ebook-a85f3",
-    storageBucket: "ebook-a85f3.appspot.com",
-    messagingSenderId: "169842456947"
+    apiKey: "AIzaSyAjBr_edD0fgE9qIV6Q04DVTX7IBTIKMEU",
+    authDomain: "herarchical-model-ebook-app.firebaseapp.com",
+    databaseURL: "https://herarchical-model-ebook-app.firebaseio.com",
+    projectId: "herarchical-model-ebook-app",
+    storageBucket: "",
+    messagingSenderId: "656625422544"
 };
 var AppModule = (function () {
     function AppModule() {
@@ -364,13 +364,13 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 341:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(226);
@@ -410,5 +410,5 @@ MyApp = __decorate([
 
 /***/ })
 
-},[277]);
+},[276]);
 //# sourceMappingURL=main.js.map

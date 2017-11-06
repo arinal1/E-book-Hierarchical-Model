@@ -15,12 +15,12 @@ import { AngularFireModule } from 'angularfire2';
 import { FirebaseProvider } from '../providers/firebase/firebase';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDlIPfhUMTjd2N-xSb5stL9jiJx-lqfSv0",
-  authDomain: "ebook-a85f3.firebaseapp.com",
-  databaseURL: "https://ebook-a85f3.firebaseio.com",
-  projectId: "ebook-a85f3",
-  storageBucket: "ebook-a85f3.appspot.com",
-  messagingSenderId: "169842456947"
+  apiKey: "AIzaSyAjBr_edD0fgE9qIV6Q04DVTX7IBTIKMEU",
+  authDomain: "herarchical-model-ebook-app.firebaseapp.com",
+  databaseURL: "https://herarchical-model-ebook-app.firebaseio.com",
+  projectId: "herarchical-model-ebook-app",
+  storageBucket: "",
+  messagingSenderId: "656625422544"
 };
 
 @NgModule({

@@ -6,26 +6,28 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
-*/
-@Injectable()
-export class FirebaseProvider {
+  */
+  @Injectable()
 
-  constructor(public afd : AngularFireDatabase) {
-    console.log('Hello FirebaseProvider Provider');
-  }
+  export class FirebaseProvider {
+    link = this.afd.list('/materi/');
+    
+    constructor(public afd : AngularFireDatabase) {
+    }
 
-  getMateri(){
-  	return this.afd.list('/materi/').valueChanges();
-  }
+    getMateri(){
+      console.log("GET!");
+      console.log(this.link.snapshotChanges());
+      return this.link.snapshotChanges();
+    }
 
-  addItem(name) {
-  	console.log("add");
-    this.afd.list('/materi/').push(name);
+    addItem(nama) {
+      console.log("Tambah " + nama);
+      this.link.push({nama: nama});
+    }
+
+    removeItem(key) {
+      console.log("Hapus " + key);
+      this.link.remove(key);
+    }
   }
- 
-  removeItem(id) {
-  	console.log('hapus!');
-    // this.afd.list('/materi/').remove(id);
-    this.afd.list('/materi/').remove('KwrTylxzfJFC1VhwZA5');
-  }
-}

@@ -9,16 +9,6 @@ import { Observable } from 'rxjs/Observable';
 })
 export class HomePage {
 
-	// materi : Observable<any[]>;
-	// constructor(
-	// 	public navCtrl: NavController, 
-	// 	afDB: AngularFireDatabase)
-	// {
-	// 	this.materi = afDB.list('/materi').valueChanges();
-	// 	console.log(this.materi);
-	// }
-
-	//
 	materi : Observable<any[]>;
 	newItem = '';
 	constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
