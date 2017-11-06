@@ -196,10 +196,9 @@ HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
         selector: 'page-home',template:/*ion-inline-start:"C:\Arinal\Ionic\E-book-Hierarchical-Model\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>E-book</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card class="card-menu" *ngFor="let item of materi | async" (click)="goToMateriPage()">\n\n    <ion-card-header class="judulBab">\n\n      {{ item.payload.key }}\n\n    </ion-card-header>\n\n\n\n    <ion-card-content>\n\n      {{ item.payload.val().namaBab }}\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>'/*ion-inline-end:"C:\Arinal\Ionic\E-book-Hierarchical-Model\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */]])
 ], HomePage);
 
-var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -232,10 +231,22 @@ var FirebaseProvider = (function () {
     function FirebaseProvider(afd) {
         this.afd = afd;
         this.link = this.afd.list('/materi/');
+        this.item = [];
     }
     FirebaseProvider.prototype.getMateri = function () {
+        var _this = this;
         console.log("GET!");
-        console.log(this.link.snapshotChanges());
+        this.link.snapshotChanges().subscribe(function (actions) {
+            actions.forEach(function (action) {
+                console.log(action.type);
+                console.log(action.key);
+                // console.log(action.payload.val());
+                Object.keys(action.payload.val()).forEach(function (key) {
+                    _this.item.push(key);
+                });
+                console.log(_this.item[1]);
+            });
+        });
         return this.link.snapshotChanges();
     };
     FirebaseProvider.prototype.addItem = function (nama) {
@@ -250,10 +261,9 @@ var FirebaseProvider = (function () {
 }());
 FirebaseProvider = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
 ], FirebaseProvider);
 
-var _a;
 //# sourceMappingURL=firebase.js.map
 
 /***/ }),
