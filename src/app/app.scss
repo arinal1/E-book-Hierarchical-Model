@@ -16,10 +16,15 @@
 // automatically applied to the <body> element in the app.
 	ion-header{
 		ion-navbar{
-			background: linear-gradient(to right,  primary, secondary);
+			
 			ion-title{
-				font-style: italic;
+
 				text-align: center;
 			}
 		}
+	}
+
+	.gradient-bar {
+		//background: linear-gradient(to right,  #f77074, #fa9369);
+		 background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77074), color-stop(100%, #fa9369));
 	}
