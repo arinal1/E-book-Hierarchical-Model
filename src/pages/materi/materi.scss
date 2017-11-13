@@ -1,3 +1,12 @@
-page-materi {
+h3 {
+	display : flex;
+	justify-content: center;	
+	text-align: center;
+}
 
+.bottom {
+	position: fixed;
+	top: 88vh;
+	bottom: 0;
+	left:50vw;
 }

@@ -8,11 +8,13 @@ import { Observable } from 'rxjs/Observable';
 	templateUrl: 'home.html'
 })
 export class HomePage {
-
 	materi : Observable<any[]>;
 	newItem = '';
+
+	private currentColor: string
 	constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
 		this.materi = this.firebaseProvider.getMateri();
+		this.currentColor = 'light';
 	}
 
 	addItem() {

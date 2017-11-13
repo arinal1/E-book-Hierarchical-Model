@@ -36,10 +36,13 @@ $app-direction: ltr;
 $colors: (
   primary:    #f77074,
   secondary:  #fa9369,
-  danger:     #f53d3d,
+  danger:     #FB8877,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
 );
+
+$header-first-color: #f77074;
+$header-last-color: #fa9369;
 
 
 // App iOS Variables

@@ -14,9 +14,15 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+	
+	$toolbar-md-title-text-color: #f8f8f8;
+
 	ion-header{
-		ion-navbar{
-			
+		.toolbar-background {
+			background: linear-gradient(120deg,  $header-first-color 0%, $header-last-color 100%);
+		}
+
+		ion-navbar{	
 			ion-title{
 
 				text-align: center;
@@ -24,7 +30,7 @@
 		}
 	}
 
-	.gradient-bar {
-		//background: linear-gradient(to right,  #f77074, #fa9369);
-		 background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77074), color-stop(100%, #fa9369));
-	}
+	// .gradient-bar {
+	// 	//background: linear-gradient(to right,  #f77074, #fa9369);
+	// 	 background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77074), color-stop(100%, #fa9369));
+	// }
