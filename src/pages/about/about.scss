@@ -1,3 +1,58 @@
 page-about {
+	.title-text{
+		color: color($colors, primary, base);
+	}
 
+	.cards-cont{
+		background: #f1f1f1;
+		border-radius: 10px;
+
+		.about-card{
+			border-radius: 10px;
+			background: white;
+			margin: 8px;
+
+			h1 {
+				margin: auto;
+			}
+
+			p{
+				color:#787878;
+			}
+
+			hr{
+				width: 90%;
+				border-radius: 25.5px;;
+				height: 0.8vh;
+				background: color($colors, primary);
+			}
+
+			ion-item{
+				display: flex;
+				align-content: center;
+				justify-content: center;
+
+				.avatar {
+					font-size: 15vw;
+					float: left;
+				}
+
+				.nama {
+					float: left;
+					margin: 2vw;
+
+					.nama-text{
+
+						color: black;
+						word-wrap: break-word;
+						font-size: 5.5vw;
+					}
+
+					.nama-role{
+						font-size: 4vw;
+					}
+				}	
+			}
+		}
+	}
 }

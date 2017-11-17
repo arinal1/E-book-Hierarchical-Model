@@ -7,30 +7,57 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title primary>Materi</ion-title>
+    <ion-title>materi</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<ion-slides (ionSlideDidChange)="halamanChange()" (ionSlideWillChange)="hideButton()">
+		<ion-slide>
+			<p padding>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</ion-slide>
+
+		<ion-slide>
+			<p padding>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</ion-slide>
+
+		<ion-slide>
+			<p padding>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</ion-slide>
+	</ion-slides>
+	
+	<p id="halaman">
+		1
 	</p>
 
-	<h3 class="bottom">
-		2
-	</h3>
-
-	<ion-fab right bottom>
+	<ion-fab right bottom id="next-btn" (click)="nextSlide()">
     	<button ion-fab mini color="danger"><ion-icon name="arrow-dropright"></ion-icon></button>
     </ion-fab>
-    <ion-fab left bottom>
+    <ion-fab left bottom id="back-btn" (click)="prevSlide()">
     	<button ion-fab mini color="danger"><ion-icon name="arrow-dropleft"></ion-icon></button>
     </ion-fab>
+
 </ion-content>

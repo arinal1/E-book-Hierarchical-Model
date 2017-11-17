@@ -1,12 +1,27 @@
-h3 {
-	display : flex;
-	justify-content: center;	
-	text-align: center;
-}
+page-materi {
 
-.bottom {
-	position: fixed;
-	top: 88vh;
-	bottom: 0;
-	left:50vw;
+
+	ion-slides {
+		ion-slide{
+			p{
+				text-align: justify;
+			}
+		}
+	}
+
+	[id*="-btn"] {
+		transition: all 0.2s ease
+	}
+
+	#back-btn {
+		display: none;
+	}
+
+	#halaman {
+		font-size: 2em;
+		position: fixed;
+		top: 87vh;
+		bottom: 0;
+		left:50vw;
+	}
 }

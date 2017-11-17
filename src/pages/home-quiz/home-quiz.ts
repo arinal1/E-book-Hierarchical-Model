@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the QuizHomePage page.
+ * Generated class for the HomeQuizPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-quiz-home',
-  templateUrl: 'quiz-home.html',
+  selector: 'page-home-quiz',
+  templateUrl: 'home-quiz.html',
 })
-export class QuizHomePage {
+export class HomequizPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad QuizHomePage');
+    console.log('ionViewDidLoad HomeQuizPage');
   }
 
   goToQuizPage(){

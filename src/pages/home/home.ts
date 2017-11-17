@@ -4,18 +4,18 @@ import { NavController } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-	selector: 'page-home',
-	templateUrl: 'home.html'
+  selector: 'page-home',
+  templateUrl: 'home.html'
 })
 export class HomePage {
 	materi : Observable<any[]>;
 	newItem = '';
 
 	private currentColor: string
-	constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
-		this.materi = this.firebaseProvider.getMateri();
+  	constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
+  		this.materi = this.firebaseProvider.getMateri();
 		this.currentColor = 'light';
-	}
+  	}
 
 	addItem() {
 		console.log(this.newItem);

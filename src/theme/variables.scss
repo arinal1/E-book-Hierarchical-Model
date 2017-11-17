@@ -41,9 +41,12 @@ $colors: (
   dark:       #222,
 );
 
+$toolbar-md-title-text-color: map-get($colors, light);
+$toolbar-ios-title-text-color: map-get($colors, light);
+$toolbar-wp-title-text-color: map-get($colors, light);
+
 $header-first-color: #f77074;
 $header-last-color: #fa9369;
-
 
 // App iOS Variables
 // --------------------------------------------------

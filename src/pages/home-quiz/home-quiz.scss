@@ -1,0 +1,39 @@
+page-home-quiz {
+	
+	h1{
+		color: color($colors, primary, base);
+	}
+
+	.gallery {
+		background: #f1f1f1;
+		border-radius: 10px;
+
+		ion-col{
+			border-radius: 10px;
+			background: white;
+			margin: 8px;
+			color: color($colors, primary, base);
+
+			.quiz-icon{
+				margin: 4px;
+				float: left;
+				font-size: 30px;
+			}
+
+			.check-icon{
+				float: right;
+				color: green;
+			}
+
+			h2 {
+				float: left;
+				margin: 0px;
+			}
+
+			p{
+				float: left;
+				margin: 0;
+			}
+		}
+	}
+}
