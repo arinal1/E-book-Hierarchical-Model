@@ -12,12 +12,19 @@ page-about {
 			background: white;
 			margin: 8px;
 
-			h1 {
-				margin: auto;
-			}
+			.card-title{
+				
+				width: 90%;
+				margin: 0 auto;
 
-			p{
-				color:#787878;
+				h1 {
+					margin: auto;
+				}
+
+				p{
+					color:#787878;
+					height: auto;
+				}
 			}
 
 			hr{
@@ -28,23 +35,14 @@ page-about {
 			}
 
 			ion-item{
-				display: flex;
-				align-content: center;
-				justify-content: center;
 
 				.avatar {
 					font-size: 15vw;
-					float: left;
 				}
 
 				.nama {
-					float: left;
-					margin: 2vw;
-
 					.nama-text{
-
 						color: black;
-						word-wrap: break-word;
 						font-size: 5.5vw;
 					}
 

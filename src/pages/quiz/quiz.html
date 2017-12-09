@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar hideBackButton="true">
     <ion-title>Quiz</ion-title>
   </ion-navbar>
 
@@ -15,7 +15,74 @@
 
 <ion-content padding>
 	<ion-slides>
-		<ion-slide class="soal">
+		<ion-slide>
+			<ion-row>
+				<ion-col class="quiz-cont" padding>
+					<p>Puncak dari Hierarki adalah ...</p>
+					<p class="nomer-quiz" text-right>1<span>/</span>20</p>
+				</ion-col>
+			</ion-row>
+			<ion-row >
+				<ion-col class="jawaban-quiz-cont" padding>
+					<ion-list radio-group>          		
+		          		<ion-item>
+							<ion-label>Entitas</ion-label>
+							<ion-radio class="radio" ng-model="choice" ng-value="'A'">
+								<div class="radio-icon">
+									<div class="radio-inner">
+										A
+									</div>
+								</div>
+							</ion-radio>
+						</ion-item>
+						<ion-item>
+							<ion-label>Entitas</ion-label>
+							<ion-radio class="radio" ng-model="choice" ng-value="'B'">
+								<div class="radio-icon">
+									<div class="radio-inner">
+										B
+									</div>
+								</div>
+							</ion-radio>
+						</ion-item>
+						<ion-item>
+							<ion-label>Entitas</ion-label>
+							<ion-radio class="radio" ng-model="choice" ng-value="'C'">
+								<div class="radio-icon">
+									<div class="radio-inner">
+										C
+									</div>
+								</div>
+							</ion-radio>
+						</ion-item>
+						<ion-item>
+							<ion-label>Entitas</ion-label>
+							<ion-radio class="radio" ng-model="choice" ng-value="'D'">
+								<div class="radio-icon">
+									<div class="radio-inner">
+										D
+									</div>
+								</div>
+							</ion-radio>
+						</ion-item>
+						<ion-item>
+							<ion-label>Entitas</ion-label>
+							<ion-radio class="radio" ng-model="choice" ng-value="'E'">
+								<div class="radio-icon">
+									<div class="radio-inner">
+										E
+									</div>
+								</div>
+							</ion-radio>
+						</ion-item>
+					</ion-list>
+
+					<button class="back-btn" ion-button color="primary" round (click)="prevSlide()">Back</button>
+					<button class="next-btn" ion-button color="primary" round (click)="nextSlide()">Next</button>
+				</ion-col>
+			</ion-row>
+		</ion-slide>
+			<ion-slide>
 			<ion-row  >
 				<ion-col class="quiz-cont" padding>
 					<p>Puncak dari Hierarki adalah ...</p>
@@ -82,74 +149,7 @@
 				</ion-col>
 			</ion-row>
 		</ion-slide>
-			<ion-slide class="soal">
-			<ion-row  >
-				<ion-col class="quiz-cont" padding>
-					<p>Puncak dari Hierarki adalah ...</p>
-					<p class="nomer-quiz" text-right>1<span>/</span>20</p>
-				</ion-col>
-			</ion-row>
-			<ion-row >
-				<ion-col class="jawaban-quiz-cont" padding>
-					<ion-list radio-group>          		
-		          		<ion-item>
-							<ion-label>Entitas</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'A'">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										A
-									</div>
-								</div>
-							</ion-radio>
-						</ion-item>
-						<ion-item>
-							<ion-label>Entitas</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'B'">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										B
-									</div>
-								</div>
-							</ion-radio>
-						</ion-item>
-						<ion-item>
-							<ion-label>Entitas</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'C'">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										C
-									</div>
-								</div>
-							</ion-radio>
-						</ion-item>
-						<ion-item>
-							<ion-label>Entitas</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'D'">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										D
-									</div>
-								</div>
-							</ion-radio>
-						</ion-item>
-						<ion-item>
-							<ion-label>Entitas</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'E'">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										E
-									</div>
-								</div>
-							</ion-radio>
-						</ion-item>
-					</ion-list>
-
-					<button class="back-btn" ion-button color="primary" round (click)="prevSlide()">Back</button>
-					<button class="next-btn" ion-button color="primary" round (click)="nextSlide()">Next</button>
-				</ion-col>
-			</ion-row>
-		</ion-slide>
-			<ion-slide class="soal">
+			<ion-slide >
 			<ion-row  >
 				<ion-col class="quiz-cont" padding>
 					<p>Puncak dari Hierarki adalah ...</p>

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Navbar } from 'ionic-angular';
+
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the HasilQuizPage page.
@@ -15,12 +17,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HasilQuizPage {
 
-	
-
-  	constructor(public navCtrl: NavController, public navParams: NavParams) {
+    @ViewChild('navbar') navBar: Navbar;
+  	
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
   		
   	}
-	
 
   	ngAfterViewInit(){
       let scoreEl = document.getElementById("score");
@@ -44,9 +45,14 @@ export class HasilQuizPage {
         	i++;
     	}, 10);  				
   	}
+    
+    ionViewDidEnter() {
+      this.navBar.backButtonClick = () => {
+        console.log('bacbuttonclicked');
+        this.navCtrl.setRoot(TabsPage);
+        this.navCtrl.popToRoot();
+      };
 
-  	ionViewDidLoad() {
-    	console.log('ionViewDidLoad HasilQuizPage');
-  	}
-
+      console.log('ionViewDidEnter HasilQuizPage');
+    }
 }
