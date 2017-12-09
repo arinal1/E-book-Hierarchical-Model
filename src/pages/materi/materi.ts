@@ -22,7 +22,7 @@ import { Observable } from 'rxjs/Observable';
     constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
         let id = navParams.get("key");
         this.bab = navParams.get("bab");
-        this.isiHalaman = this.firebaseProvider.getBab(id);
+        this.isiHalaman = this.firebaseProvider.getMateri(id);
         console.log(id);
     }
 

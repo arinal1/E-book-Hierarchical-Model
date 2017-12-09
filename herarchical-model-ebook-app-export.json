@@ -1,240 +1,402 @@
 {
-  "kuis" : {
-    "bab 1" : {
-      "nomer 1" : {
-        "jawaban" : "c",
-        "opsi" : {
-          "a" : "Entitas",
-          "b" : "Interface",
-          "c" : "Root",
-          "d" : "Induk"
-        },
-        "soal" : "Puncak dari hirarki adalah"
-      },
-      "nomer 10" : {
-        "jawaban" : "d",
-        "opsi" : {
-          "a" : "Empat persegi panjang",
-          "b" : "Tiga pesegi panjang",
-          "c" : "Satu persegi panjang",
-          "d" : "Banyak persegi panjang"
-        },
-        "soal" : "Entitas dalam model hirarki dilambangkan dengan "
-      },
-      "nomer 2" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "Child",
-          "b" : "Root",
-          "c" : "Parent",
-          "d" : "Hirarki"
-        },
-        "soal" : "Entitas induk mempunyai beberapa sub entitsas yang disebut"
-      },
-      "nomer 3" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "1",
-          "b" : "2",
-          "c" : "3",
-          "d" : "4"
-        },
-        "soal" : "Yang dimaksud root terletak pada nomer?"
-      },
-      "nomer 4" : {
-        "jawaban" : "b",
-        "opsi" : {
-          "a" : "1",
-          "b" : "2",
-          "c" : "3",
-          "d" : "4"
-        },
-        "soal" : "Yang dimaksud parent terletak pada nomer?"
-      },
-      "nomer 5" : {
-        "jawaban" : "d",
-        "opsi" : {
-          "a" : "1",
-          "b" : "2",
-          "c" : "3",
-          "d" : "4"
-        },
-        "soal" : "Yang dimaksud child terletak pada nomer?"
-      },
-      "nomer 6" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "Tidak dapat dilakukan pencarian data pada field atribut",
-          "b" : "Hubungan antar entitas yang sulit",
-          "c" : "Digunakan sebagai kunci data",
-          "d" : "Tidak bisa melakukan pencarian pada entitas"
-        },
-        "soal" : "Kelemahan pada hirarki model adalah tidak"
-      },
-      "nomer 7" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "One to many",
-          "b" : "Many to many",
-          "c" : "One to two",
-          "d" : "Many to one"
-        },
-        "soal" : "Relasi antara entitas dalam network model adalah "
-      },
-      "nomer 8" : {
-        "jawaban" : "c",
-        "opsi" : {
-          "a" : "One to many",
-          "b" : "Many to one",
-          "c" : "Many to many",
-          "d" : "Many"
-        },
-        "soal" : "Entitas perantara berfungsi untuk relasi "
-      },
-      "nomer 9" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "Adanya entitas perantara",
-          "b" : "Adanya entitas induk",
-          "c" : "Adanya entitas yang banyak",
-          "d" : "Adanya struktur data"
-        },
-        "soal" : "Ciri khas model ini terdapat adalah"
-      }
-    },
-    "bab 2" : {
-      "nomer 1" : {
-        "jawaban" : "b",
-        "opsi" : {
-          "a" : "Perancangan basis data",
-          "b" : "pembentuk karakteristik",
-          "c" : "pembentukan basis data",
-          "d" : "bernilai tunggal"
-        },
-        "soal" : "Yang termasuk dari fungsi atribut adalah?"
-      },
-      "nomer 10" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "No_pem",
-          "b" : "P02",
-          "c" : "Harapan",
-          "d" : "No"
-        },
-        "soal" : "Ketergantungan fungsional dari tabel Pemasok_barang adalah"
-      },
-      "nomer 2" : {
-        "jawaban" : "c",
-        "opsi" : {
-          "a" : "Not null atribut",
-          "b" : "Mandatory dan non mandatory attribute",
-          "c" : "Format baris",
-          "d" : "Atribut turunan"
-        },
-        "soal" : "Berikut yang bukan jenis atribut adalah?"
-      },
-      "nomer 3" : {
-        "jawaban" : "d",
-        "opsi" : {
-          "a" : "alamat",
-          "b" : "Tgl_lahir",
-          "c" : "Kode_pos",
-          "d" : "Alamat_mhs"
-        },
-        "soal" : "Dari table diatas yang termasuk atribut komposit adalah"
-      },
-      "nomer 4" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "Alamat_mhs",
-          "b" : "Tgl_lahir",
-          "c" : "Alamat",
-          "d" : "Kode_pos"
-        },
-        "soal" : "Dari table diatas yang bukan termasuk atribut sederhana adalah"
-      },
-      "nomer 5" : {
-        "jawaban" : "c",
-        "opsi" : {
-          "a" : "Non mandatory",
-          "b" : "Multivalue",
-          "c" : "Ternary degree",
-          "d" : "Utility"
-        },
-        "soal" : "Yang merupakan klasifikasi relasi berdasarkan derajatnya adalah"
-      },
-      "nomer 6" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "Hubungan antara satu atau lebih entitas",
-          "b" : "Hubungan antara dua entitas",
-          "c" : "Hubungan antara entitas pertama dan entitas kedua",
-          "d" : "Batasan jumlah keterhubungan"
-        },
-        "soal" : "Apa yang dimaksud dari relationship"
-      },
-      "nomer 7" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "one to many",
-          "b" : "many to many",
-          "c" : "binary degree",
-          "d" : "one to one"
-        },
-        "soal" : "jenis Cardinality Ratio yang merupakan dimana hubungan antara entitas pertama dan kedua adalah satu berbanding banyak atau banyak berbanding satu adalah "
-      },
-      "nomer 8" : {
-        "jawaban" : "a",
-        "opsi" : {
-          "a" : "entitas yang tergantung dari keberadaan entitas lain",
-          "b" : "entitas cadangan",
-          "c" : "entitas yang tergantung dari jumlah entitas lain",
-          "d" : "entitas gabungan dari entitas lain"
-        },
-        "soal" : "apa yang dimaksud dengan weak entity "
-      },
-      "nomer 9" : {
-        "jawaban" : "b",
-        "opsi" : {
-          "a" : "entitas yang lebih sederhana",
-          "b" : "weak entity karena tergantung penuh pada entitas pegawai",
-          "c" : "merupakan entitas induk",
-          "d" : "entitas yang banyak berbanding satu"
-        },
-        "soal" : "entitas tanggungan adalah"
-      }
-    }
-  },
-  "materi" : {
+  "bab" : {
     "1" : {
-      "namaBab" : "Hierarchical Model",
-      "halaman" : {
-        "1" : "Model Hirarki Basis Data (Hierarchical Model)                               Dalam model ini data disusun menurut struktur pohon. Puncak dari herarki disebut dengan root sedangkan entitas atau interface                                di bawahnya dikenal sebagai induk (parent). Entitas induk mempunyai beberapa sub entitsas yang disebut anak (child).                                Entitas dalam model hirarki dilambangkan dengan empat persegi panjang. Sedangkan relasi atau hubungan dengan entitas lain                                dinotasikan dengan garis. Gambar dibawah ini menjelaskan salah satu contoh                               model hirarki basis data level konseptual sistem perkuliahan                               Gambar 28. Model Herarki sistem perkuliahan (level konseptual)",
-        "2" : "Dari gambar struktur hirarki basis data diatas dapat dibuat struktur pengkodean record data (level fisik)                                untuk setiap entitas beserta hubungan antar. Susuan herarkhi ditujukkan dengan tanda anak panah pada medan data (field)                                yang digunakan sebagai kunci data (primary key, daerah diarsir). Relasi dalam herarkhi model hubungan antar entitas dinyatakan                               dalam satu-banyak(one to many) atau satu – satu (one to one). Kelemahan hararkhi model adalah tidak dapat dilakukan pencarian data                                pada field atribut, misal tidak dapat menampilkan data pda tabel mata kuliah berdasarkan jum_SKS, karena jum_SKS bukan kunci data.                                Masalah ini dapat diatasi dengan mengubah struktur data dengan memberi hubungan khusus (misalnya dengan variabel pointer).                               Gambar 29. Struktur pengkodean record data (model level fisik)",
-        "3" : "Model Jaringan Basis Data (Network Model).                               Dalam model jaringan entitas induk maupun anak bisa lebih dari dua. Model ini merupakan pengembangan model hirarki.                                Relasi antara entitas dalam network model adalah satu ke satu (one to one) atau satu ke banyak (one to many).                               Gambar 30. Model struktur jaringan basis data                               Dalam network data model tidak diperbolehkan terdapat relasi banyak ke banyak (many to many). Untuk membuat relasi                                many to many dalam network model dibutuhkan entitas perantara yang disebut sebagai rekaman silang (intersection record).                               Dari gambar 11 entitas registrasi adalah merupakan entitas perantara antara etitas mahasiswa dengan entitas mata kuliah",
-        "4" : "Gambar 31. Organisasi record data pada model jaringan"
+      "materi" : {
+        "namaBab" : "Hierarchical Model",
+        "halaman" : {
+          "1" : "Model Hirarki Basis Data (Hierarchical Model)                               Dalam model ini data disusun menurut struktur pohon. Puncak dari herarki disebut dengan root sedangkan entitas atau interface                                di bawahnya dikenal sebagai induk (parent). Entitas induk mempunyai beberapa sub entitsas yang disebut anak (child).                                Entitas dalam model hirarki dilambangkan dengan empat persegi panjang. Sedangkan relasi atau hubungan dengan entitas lain                                dinotasikan dengan garis. Gambar dibawah ini menjelaskan salah satu contoh                               model hirarki basis data level konseptual sistem perkuliahan                               Gambar 28. Model Herarki sistem perkuliahan (level konseptual)",
+          "2" : "Dari gambar struktur hirarki basis data diatas dapat dibuat struktur pengkodean record data (level fisik)                                untuk setiap entitas beserta hubungan antar. Susuan herarkhi ditujukkan dengan tanda anak panah pada medan data (field)                                yang digunakan sebagai kunci data (primary key, daerah diarsir). Relasi dalam herarkhi model hubungan antar entitas dinyatakan                               dalam satu-banyak(one to many) atau satu – satu (one to one). Kelemahan hararkhi model adalah tidak dapat dilakukan pencarian data                                pada field atribut, misal tidak dapat menampilkan data pda tabel mata kuliah berdasarkan jum_SKS, karena jum_SKS bukan kunci data.                                Masalah ini dapat diatasi dengan mengubah struktur data dengan memberi hubungan khusus (misalnya dengan variabel pointer).                               Gambar 29. Struktur pengkodean record data (model level fisik)",
+          "3" : "Model Jaringan Basis Data (Network Model).                               Dalam model jaringan entitas induk maupun anak bisa lebih dari dua. Model ini merupakan pengembangan model hirarki.                                Relasi antara entitas dalam network model adalah satu ke satu (one to one) atau satu ke banyak (one to many).                               Gambar 30. Model struktur jaringan basis data                               Dalam network data model tidak diperbolehkan terdapat relasi banyak ke banyak (many to many). Untuk membuat relasi                                many to many dalam network model dibutuhkan entitas perantara yang disebut sebagai rekaman silang (intersection record).                               Dari gambar 11 entitas registrasi adalah merupakan entitas perantara antara etitas mahasiswa dengan entitas mata kuliah",
+          "4" : "Gambar 31. Organisasi record data pada model jaringan"
+        }
+      },
+      "kuis" : {
+        "1" : {
+          "jawaban" : "c",
+          "opsi" : {
+            "a" : {
+              "value" : "Entitas"
+            },
+            "b" : {
+              "value" : "Interface"
+            },
+            "c" : {
+              "value" : "Root"
+            },
+            "d" : {
+              "value" : "Induk"
+            }
+          },
+          "soal" : "Puncak dari hirarki adalah"
+        },
+        "2" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "Child"
+            },
+            "b" : {
+              "value" : "Root"
+            },
+            "c" : {
+              "value" : "Parent"
+            },
+            "d" : {
+              "value" : "Hirarki"
+            }
+          },
+          "soal" : "Entitas induk mempunyai beberapa sub entitsas yang disebut"
+        },
+        "3" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "1"
+            },
+            "b" : {
+              "value" : "2"
+            },
+            "c" : {
+              "value" : "3"
+            },
+            "d" : {
+              "value" : "4"
+            }
+          },
+          "soal" : "Yang dimaksud root terletak pada nomer?"
+        },
+        "4" : {
+          "jawaban" : "b",
+          "opsi" : {
+            "a" : {
+              "value" : "1"
+            },
+            "b" : {
+              "value" : "2"
+            },
+            "c" : {
+              "value" : "3"
+            },
+            "d" : {
+              "value" : "4"
+            }
+          },
+          "soal" : "Yang dimaksud parent terletak pada nomer?"
+        },
+        "5" : {
+          "jawaban" : "d",
+          "opsi" : {
+            "a" : {
+              "value" : "1"
+            },
+            "b" : {
+              "value" : "2"
+            },
+            "c" : {
+              "value" : "3"
+            },
+            "d" : {
+              "value" : "4"
+            }
+          },
+          "soal" : "Yang dimaksud child terletak pada nomer?"
+        },
+        "6" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "Tidak dapat dilakukan pencarian data pada field atribut"
+            },
+            "b" : {
+              "value" : "Hubungan antar entitas yang sulit"
+            },
+            "c" : {
+              "value" : "Digunakan sebagai kunci data"
+            },
+            "d" : {
+              "value" : "Tidak bisa melakukan pencarian pada entitas"
+            }
+          },
+          "soal" : "Kelemahan pada hirarki model adalah tidak"
+        },
+        "7" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "One to many"
+            },
+            "b" : {
+              "value" : "Many to many"
+            },
+            "c" : {
+              "value" : "One to two"
+            },
+            "d" : {
+              "value" : "Many to one"
+            }
+          },
+          "soal" : "Relasi antara entitas dalam network model adalah "
+        },
+        "8" : {
+          "jawaban" : "c",
+          "opsi" : {
+            "a" : {
+              "value" : "One to many"
+            },
+            "b" : {
+              "value" : "Many to one"
+            },
+            "c" : {
+              "value" : "Many to many"
+            },
+            "d" : {
+              "value" : "Many"
+            }
+          },
+          "soal" : "Entitas perantara berfungsi untuk relasi "
+        },
+        "9" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "Adanya entitas perantara"
+            },
+            "b" : {
+              "value" : "Adanya entitas induk"
+            },
+            "c" : {
+              "value" : "Adanya entitas yang banyak"
+            },
+            "d" : {
+              "value" : "Adanya struktur data"
+            }
+          },
+          "soal" : "Ciri khas model ini terdapat adalah"
+        },
+        "10" : {
+          "jawaban" : "d",
+          "opsi" : {
+            "a" : {
+              "value" : "Empat persegi panjang"
+            },
+            "b" : {
+              "value" : "Tiga pesegi panjang"
+            },
+            "c" : {
+              "value" : "Satu persegi panjang"
+            },
+            "d" : {
+              "value" : "Banyak persegi panjang"
+            }
+          },
+          "soal" : "Entitas dalam model hirarki dilambangkan dengan "
+        }
       }
     },
     "2" : {
-      "namaBab" : "Ketergantungan Fungsional",
-      "halaman" : {
-        "1" : "Tabel dan atribut\t  Sebagaimana telah dijelaskan dalam kegiatan belajar 2, tabel adalah kompulan data yang tersusun dalam format baris (record) dan kolom (field atau atribut). Atribut ini lebih umum digunakan dalam perancangan basis data, karena menunjukkan fungsinya sebagai pembentuk karakteristik (sifat–sifat) yang melekat pada sebuah table. Atribut dibedakan menjadi beberapa jenis yaitu :   1)\tsimple atribut (Simple Attribute) dan Atribut Komposit (Composite Attribute).  2)\tAtribut BernilaiTunggal (Single Valued Attribute) dan Atribut Bernilai Banyak (Multi Valued Atrtribute).  3)\tMandatory dan Non mandatory Attribute  4)\tNot Null atribut  5)\tAtribut Turunan.",
-        "2" : "Dari gambar diatas dan gambar dibawah ini dapat diketahui dan dikelompokkan atribut-atributnya berdasarkan kategorinya yaitu sebagai berikut :  Atribut sederhana: nim, tgl_lahir, kota, kode pos. Merupakan atribut sederhana (atomic attribute) karena tidak bisa dipecah lagi.",
-        "3" : "Atribut komposit : alamat_mhs(merupakan atribut komposite karena bias dipecah lagi menjadi tabel: alamat, kota, kode pos), nama_mhs (merupakan atribut komposite karena bisa dipecah lagi menjadi tabel: nama depan, nama belakang, inisial).  Gambar 30. Tabel mahasiswa dengan atribut tunggal dan banyak  Atribut tunggal : nim, nama_mhs, alamat_mhs, tgl_lahir (merupakan atribut tunggal karena hanya mempunyai satu nilai)",
-        "4" : "Atribut bernilai banyak: hobi (merupakan multivalue atribut karena mempunyai nilai banyak dan nilai yang jenisnya)     Gambar 31. Tabel mahasiswa dengan atribut mandatory  Mandatori atribut : nim, nama-mhs (merupakan mandatori atribut karena atribut tersebut harus memiliki nilai dan tidak boleh kosong)",
-        "5" : "Non mandatory atribut: alamat, tgl lahir, hobi (merupakan non mandatory atribute karena boleh tidak memiliki nilai atau NOT NULL)  Atribut turunan : indeks prestasi (ip), merupakan atribut diturunkan dari beberapa atribut nilai mata kuliah.      Gambar 32. Tabel mahasiswa dengan atribut turunan.",
-        "6" : "2) Relationship  Sebagai mana dijelaskan pada uraian kegiatan 3 bahwa relasi atau relationship merupakan hubungan yang terjadi antara satu atau lebih entitas.  Berikut ini adalah contoh penggambaran diagram relationship antara 2 entitas :    Gambar 33. Contoh diagram relationship antar 2 entitas  Pada diagram di atas terlihat relasi „kerja‟ antara entitas pegawai dengan entitas proyek. Derajat dari relationship menjelaskan jumlah entitas yang berpartisipasi dalam suatu relationship. Klasifikasi relasi berdasarkan derajatnya adalah:",
-        "7" : "1. Unary Degree (Derajat Satu)  Relationship yang hanya melibatkan 1 entitas.    Gambar 34. Unary Degree Relationship  2. Binary Degree (Derajat Dua)  Relationship yang melibatkan 2 entitas.    Gambar 35. Binary Degree Relationship Relationship",
-        "8" : "3. Ternary Degree (Derajat tiga)  Relationship yang melibatkan 3 entitas.    Gambar 36 Ternary Degree Relationship Relationship  Rasio kardinalitasatau Cardinality Ratio Constraintmenjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Jeni – jenis Cardinality Ratio(rasio kardinalitas)",
-        "9" : "1. One–to–one (1 : 1)  Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah satu berbanding satu.Contoh : pada pengajaran private satu guru satu siswa. “seorang guru mengajar seorang siswa, seorang siswa diajar oleh seorang guru”    Gambar 37. Kardinalitas one to one  2. One-to-manyatau many-to-one(1 : N atau N : 1)  Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah satu berbanding banyak atau banyak berbanding satu. Contoh kasus :Dalam suatu perusahan satu bagian mempekerjakan banyak pegawai. “Satu bagian mempekerjakan banyak pegawai, satu pegawai kerja dalam satu bagian”    Gambar 38 Kardinalitas one to many",
-        "10" : "3. Many-to-many (N : N) Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah banyak berbanding banyak.Contoh kasus : Dalam Dalam universitas seorang mahasiswa dapat mengambil banyak matakuliah.“Satu mahasiswa mengambil banyak matakulih dan satu matakuliah diambil banyak mahasiswa.”    Gambar 39 Kardinalitas many to many  Weak Entity adalah suatu entitas dimana keberadaan dari entitas tersebut tergantung dari keberadaan entitas lain. Entitas yang merupakan induknya disebut Identifying Owner dan relationshipnya disebut Identifying Relationship.",
-        "11" : "Contoh dari sebuah weak entity :    Gambar 40. Weak entity  Entitas tanggungan adalah weak entity karena tergantung penuh pada entitas pegawai.   3) Ketergantungan Fungsional  Atribut Y pada relasi R dikatakan tergantung fungsional pada atribut X (R,X, R,Y), jika dan hanya jika setiap nilai X pada relasi R mempunyai tepat satu nilai Y pada R.Misal, terdapat skema database Pemasok_barang. Dengan table pemasok (No_pem, Na_pem)  dibuat table  woy  No_pem Na_pem P01 Baharu P02 Sinar P03 Harapan  Ketergantungan fungsional dari tabel Pemasok_barang adalah : No_pem  Na_pem (nama pemasuk tergantung secara fungsional dari Nomer pemasok)",
-        "12" : "4) Ketergantungan Fungsional Penuh  Atribut Y pada relasi R dikatakan tergantung fungsional penuh pada atribut X pada relasi R, jika Y tidak tergantung pada subset dari X (bila X adalah key gabungan). Contoh tabel Kirim_barang (No_pem, Na_pem, No_bar, Jumlah)  dibuat table woy  No_pem Na_pem No_bar Jumlah P01 Baharu B01 1000 P01 Baharu B02 1500 P01 Baharu B03 2000 P02 Sinar B03 1000 P03 Harapan B02 2000 Ketergantungan fungsionalnya adalah : No_pem  Na_pem No_bar, No_pem  Jumlah (tergantung penuh terhadap keynya)",
-        "13" : "5) Ketergantungan Transitif  Atribut Z pada relasi R dikatakan tergantung transitif pada atribut X, jika atribut Y tergantung pada atribut X pada relasi R dan atribut tergantung pada atribut Y pada relasi R. Contoh perhatikan tabel dibawah ini :    Ketergantungan fungsional : No_pem  Kode_kota Kode_kota  Kota, maka No_pem  Kota",
-        "14" : "6) Contoh Lain Ketergantungan Fungsioanl.  Diberikan sebuah tabel T berisi paling sedikit 2 buah atribut, yaitu A dan B. Kita dapat menyatakan notasi berikut ini : A dan B Yang berarti A secara fungsional menentukan B atau B secara fungsional tergantung pada A, jika dan hanya jika setiap kumpulan baris (row) yang ada di tabel T, pasti ada 2 baris data (row) di tabel dengan nilai A yang sama, maka nilai B pasti juga sama. Definisi yang paling formal untuk itu adalah :  Diberikan 2 row r1 dan r2 dalam tabel T dimana A  B. jika r1(A) = r2(A) maka r1(B) = r2(B)",
-        "15" : "nama_kul nim nama_mhs indeks_nilai (table ya table digawe gagen)  row 1 Sistem Basis Data 040001 Santi Purnamasari A row 2 Sistem Basis Data 040002 Budi Setyawan B row 3 Struktur Data 040001 Santi Purnamasari row 4 Struktur Data 040002 Budi Setyawan row 5 Struktur Data 040003 Kartika Sari row 6 Komunikasi Data 040001 Santi Purnamasari B row 7 Riset Operasi 040002 Budi Setyawan C  Dengan melihat data di atas dan dengan pertimbangan intuisi kita, maka ketergantungan fungsional yang dapat kita ajukan adalah :   nim  nama_mhs yang berarti bahwa atribut nama_mhs hanya tergantung pada atribut nim. Hal ini dibuktikan dari fakta : untuk setiap nilai nim yang sama, maka pasti nilai nama_mhsnya juga sama.",
-        "16" : "nama_kul, nim  indeks_nilai yang berarti bahwa atribut indeks_nilai tergantung pada atribut nama_kul dan nim secara bersama–sama, memang kita tidak dapat menunjukkan fakta, bahwa untuk setiap nilai nama_kul dan nim yang sama, maka nilai indeks_nilainya juga sama, karena nama_kul, nim merupakan key (sehingga bersifat unik) untuk tabel tersebut. Tetapi, ketergantungan fungsional tersebut sesuai dengan pengertian bahwa setiap indeks_nilai diperuntukkan pada mahasiswa tertentu untuk mata kuliah tertentu yang diambilnya.  Tanpa memperhatikan pengertian ketergantungan secara alamiah terhadap tabel tersebut, kita juga dapat mengajukan sejumlah ketidaktergantungan (non KF) dengan hanya melihat fakta yang ada,yaitu :",
-        "17" : "nama_kul nim yang artinya atribut nim tidak tergantung pada atribut nama_kul. Buktinya terlihat pada row 1 dan row 2 : dengan nilai nama_kul yang sama, tapi nilai nimnya berbeda.  nim nideks_nilai yang artinya atribut indeks_nilai tidak bergantung pada atribut nim. Buktinya terlihat pada row 1 dan row 3 : dengan nilai nim yang sama, tapi nilai indeks_nilai berbeda."
+      "materi" : {
+        "namaBab" : "Ketergantungan Fungsional",
+        "halaman" : {
+          "1" : "Tabel dan atribut\t  Sebagaimana telah dijelaskan dalam kegiatan belajar 2, tabel adalah kompulan data yang tersusun dalam format baris (record) dan kolom (field atau atribut). Atribut ini lebih umum digunakan dalam perancangan basis data, karena menunjukkan fungsinya sebagai pembentuk karakteristik (sifat–sifat) yang melekat pada sebuah table. Atribut dibedakan menjadi beberapa jenis yaitu :   1)\tsimple atribut (Simple Attribute) dan Atribut Komposit (Composite Attribute).  2)\tAtribut BernilaiTunggal (Single Valued Attribute) dan Atribut Bernilai Banyak (Multi Valued Atrtribute).  3)\tMandatory dan Non mandatory Attribute  4)\tNot Null atribut  5)\tAtribut Turunan.",
+          "2" : "Dari gambar diatas dan gambar dibawah ini dapat diketahui dan dikelompokkan atribut-atributnya berdasarkan kategorinya yaitu sebagai berikut :  Atribut sederhana: nim, tgl_lahir, kota, kode pos. Merupakan atribut sederhana (atomic attribute) karena tidak bisa dipecah lagi.",
+          "3" : "Atribut komposit : alamat_mhs(merupakan atribut komposite karena bias dipecah lagi menjadi tabel: alamat, kota, kode pos), nama_mhs (merupakan atribut komposite karena bisa dipecah lagi menjadi tabel: nama depan, nama belakang, inisial).  Gambar 30. Tabel mahasiswa dengan atribut tunggal dan banyak  Atribut tunggal : nim, nama_mhs, alamat_mhs, tgl_lahir (merupakan atribut tunggal karena hanya mempunyai satu nilai)",
+          "4" : "Atribut bernilai banyak: hobi (merupakan multivalue atribut karena mempunyai nilai banyak dan nilai yang jenisnya)     Gambar 31. Tabel mahasiswa dengan atribut mandatory  Mandatori atribut : nim, nama-mhs (merupakan mandatori atribut karena atribut tersebut harus memiliki nilai dan tidak boleh kosong)",
+          "5" : "Non mandatory atribut: alamat, tgl lahir, hobi (merupakan non mandatory atribute karena boleh tidak memiliki nilai atau NOT NULL)  Atribut turunan : indeks prestasi (ip), merupakan atribut diturunkan dari beberapa atribut nilai mata kuliah.      Gambar 32. Tabel mahasiswa dengan atribut turunan.",
+          "6" : "2) Relationship  Sebagai mana dijelaskan pada uraian kegiatan 3 bahwa relasi atau relationship merupakan hubungan yang terjadi antara satu atau lebih entitas.  Berikut ini adalah contoh penggambaran diagram relationship antara 2 entitas :    Gambar 33. Contoh diagram relationship antar 2 entitas  Pada diagram di atas terlihat relasi „kerja‟ antara entitas pegawai dengan entitas proyek. Derajat dari relationship menjelaskan jumlah entitas yang berpartisipasi dalam suatu relationship. Klasifikasi relasi berdasarkan derajatnya adalah:",
+          "7" : "1. Unary Degree (Derajat Satu)  Relationship yang hanya melibatkan 1 entitas.    Gambar 34. Unary Degree Relationship  2. Binary Degree (Derajat Dua)  Relationship yang melibatkan 2 entitas.    Gambar 35. Binary Degree Relationship Relationship",
+          "8" : "3. Ternary Degree (Derajat tiga)  Relationship yang melibatkan 3 entitas.    Gambar 36 Ternary Degree Relationship Relationship  Rasio kardinalitasatau Cardinality Ratio Constraintmenjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Jeni – jenis Cardinality Ratio(rasio kardinalitas)",
+          "9" : "1. One–to–one (1 : 1)  Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah satu berbanding satu.Contoh : pada pengajaran private satu guru satu siswa. “seorang guru mengajar seorang siswa, seorang siswa diajar oleh seorang guru”    Gambar 37. Kardinalitas one to one  2. One-to-manyatau many-to-one(1 : N atau N : 1)  Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah satu berbanding banyak atau banyak berbanding satu. Contoh kasus :Dalam suatu perusahan satu bagian mempekerjakan banyak pegawai. “Satu bagian mempekerjakan banyak pegawai, satu pegawai kerja dalam satu bagian”    Gambar 38 Kardinalitas one to many",
+          "10" : "3. Many-to-many (N : N) Relationship antar entitas dimana hubungan antara entitas pertama dan kedua adalah banyak berbanding banyak.Contoh kasus : Dalam Dalam universitas seorang mahasiswa dapat mengambil banyak matakuliah.“Satu mahasiswa mengambil banyak matakulih dan satu matakuliah diambil banyak mahasiswa.”    Gambar 39 Kardinalitas many to many  Weak Entity adalah suatu entitas dimana keberadaan dari entitas tersebut tergantung dari keberadaan entitas lain. Entitas yang merupakan induknya disebut Identifying Owner dan relationshipnya disebut Identifying Relationship.",
+          "11" : "Contoh dari sebuah weak entity :    Gambar 40. Weak entity  Entitas tanggungan adalah weak entity karena tergantung penuh pada entitas pegawai.   3) Ketergantungan Fungsional  Atribut Y pada relasi R dikatakan tergantung fungsional pada atribut X (R,X, R,Y), jika dan hanya jika setiap nilai X pada relasi R mempunyai tepat satu nilai Y pada R.Misal, terdapat skema database Pemasok_barang. Dengan table pemasok (No_pem, Na_pem)  dibuat table  woy  No_pem Na_pem P01 Baharu P02 Sinar P03 Harapan  Ketergantungan fungsional dari tabel Pemasok_barang adalah : No_pem  Na_pem (nama pemasuk tergantung secara fungsional dari Nomer pemasok)",
+          "12" : "4) Ketergantungan Fungsional Penuh  Atribut Y pada relasi R dikatakan tergantung fungsional penuh pada atribut X pada relasi R, jika Y tidak tergantung pada subset dari X (bila X adalah key gabungan). Contoh tabel Kirim_barang (No_pem, Na_pem, No_bar, Jumlah)  dibuat table woy  No_pem Na_pem No_bar Jumlah P01 Baharu B01 1000 P01 Baharu B02 1500 P01 Baharu B03 2000 P02 Sinar B03 1000 P03 Harapan B02 2000 Ketergantungan fungsionalnya adalah : No_pem  Na_pem No_bar, No_pem  Jumlah (tergantung penuh terhadap keynya)",
+          "13" : "5) Ketergantungan Transitif  Atribut Z pada relasi R dikatakan tergantung transitif pada atribut X, jika atribut Y tergantung pada atribut X pada relasi R dan atribut tergantung pada atribut Y pada relasi R. Contoh perhatikan tabel dibawah ini :    Ketergantungan fungsional : No_pem  Kode_kota Kode_kota  Kota, maka No_pem  Kota",
+          "14" : "6) Contoh Lain Ketergantungan Fungsioanl.  Diberikan sebuah tabel T berisi paling sedikit 2 buah atribut, yaitu A dan B. Kita dapat menyatakan notasi berikut ini : A dan B Yang berarti A secara fungsional menentukan B atau B secara fungsional tergantung pada A, jika dan hanya jika setiap kumpulan baris (row) yang ada di tabel T, pasti ada 2 baris data (row) di tabel dengan nilai A yang sama, maka nilai B pasti juga sama. Definisi yang paling formal untuk itu adalah :  Diberikan 2 row r1 dan r2 dalam tabel T dimana A  B. jika r1(A) = r2(A) maka r1(B) = r2(B)",
+          "15" : "nama_kul nim nama_mhs indeks_nilai (table ya table digawe gagen)  row 1 Sistem Basis Data 040001 Santi Purnamasari A row 2 Sistem Basis Data 040002 Budi Setyawan B row 3 Struktur Data 040001 Santi Purnamasari row 4 Struktur Data 040002 Budi Setyawan row 5 Struktur Data 040003 Kartika Sari row 6 Komunikasi Data 040001 Santi Purnamasari B row 7 Riset Operasi 040002 Budi Setyawan C  Dengan melihat data di atas dan dengan pertimbangan intuisi kita, maka ketergantungan fungsional yang dapat kita ajukan adalah :   nim  nama_mhs yang berarti bahwa atribut nama_mhs hanya tergantung pada atribut nim. Hal ini dibuktikan dari fakta : untuk setiap nilai nim yang sama, maka pasti nilai nama_mhsnya juga sama.",
+          "16" : "nama_kul, nim  indeks_nilai yang berarti bahwa atribut indeks_nilai tergantung pada atribut nama_kul dan nim secara bersama–sama, memang kita tidak dapat menunjukkan fakta, bahwa untuk setiap nilai nama_kul dan nim yang sama, maka nilai indeks_nilainya juga sama, karena nama_kul, nim merupakan key (sehingga bersifat unik) untuk tabel tersebut. Tetapi, ketergantungan fungsional tersebut sesuai dengan pengertian bahwa setiap indeks_nilai diperuntukkan pada mahasiswa tertentu untuk mata kuliah tertentu yang diambilnya.  Tanpa memperhatikan pengertian ketergantungan secara alamiah terhadap tabel tersebut, kita juga dapat mengajukan sejumlah ketidaktergantungan (non KF) dengan hanya melihat fakta yang ada,yaitu :",
+          "17" : "nama_kul nim yang artinya atribut nim tidak tergantung pada atribut nama_kul. Buktinya terlihat pada row 1 dan row 2 : dengan nilai nama_kul yang sama, tapi nilai nimnya berbeda.  nim nideks_nilai yang artinya atribut indeks_nilai tidak bergantung pada atribut nim. Buktinya terlihat pada row 1 dan row 3 : dengan nilai nim yang sama, tapi nilai indeks_nilai berbeda."
+        }
+      },
+      "kuis" : {
+        "1" : {
+          "jawaban" : "b",
+          "opsi" : {
+            "a" : {
+              "value" : "Perancangan basis data"
+            },
+            "b" : {
+              "value" : "pembentuk karakteristik"
+            },
+            "c" : {
+              "value" : "pembentukan basis data"
+            },
+            "d" : {
+              "value" : "bernilai tunggal"
+            }
+          },
+          "soal" : "Yang termasuk dari fungsi atribut adalah?"
+        },
+        "2" : {
+          "jawaban" : "c",
+          "opsi" : {
+            "a" : {
+              "value" : "Not null atribut"
+            },
+            "b" : {
+              "value" : "Mandatory dan non mandatory attribute"
+            },
+            "c" : {
+              "value" : "Format baris"
+            },
+            "d" : {
+              "value" : "Atribut turunan"
+            }
+          },
+          "soal" : "Berikut yang bukan jenis atribut adalah?"
+        },
+        "3" : {
+          "jawaban" : "d",
+          "opsi" : {
+            "a" : {
+              "value" : "alamat"
+            },
+            "b" : {
+              "value" : "Tgl_lahir"
+            },
+            "c" : {
+              "value" : "Kode_pos"
+            },
+            "d" : {
+              "value" : "Alamat_mhs"
+            }
+          },
+          "soal" : "Dari table diatas yang termasuk atribut komposit adalah"
+        },
+        "4" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "Alamat_mhs"
+            },
+            "b" : {
+              "value" : "Tgl_lahir"
+            },
+            "c" : {
+              "value" : "Alamat"
+            },
+            "d" : {
+              "value" : "Kode_pos"
+            }
+          },
+          "soal" : "Dari table diatas yang bukan termasuk atribut sederhana adalah"
+        },
+        "5" : {
+          "jawaban" : "c",
+          "opsi" : {
+            "a" : {
+              "value" : "Non mandatory"
+            },
+            "b" : {
+              "value" : "Multivalue"
+            },
+            "c" : {
+              "value" : "Ternary degree"
+            },
+            "d" : {
+              "value" : "Utility"
+            }
+          },
+          "soal" : "Yang merupakan klasifikasi relasi berdasarkan derajatnya adalah"
+        },
+        "6" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "Hubungan antara satu atau lebih entitas"
+            },
+            "b" : {
+              "value" : "Hubungan antara dua entitas"
+            },
+            "c" : {
+              "value" : "Hubungan antara entitas pertama dan entitas kedua"
+            },
+            "d" : {
+              "value" : "Batasan jumlah keterhubungan"
+            }
+          },
+          "soal" : "Apa yang dimaksud dari relationship"
+        },
+        "7" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "one to many"
+            },
+            "b" : {
+              "value" : "many to many"
+            },
+            "c" : {
+              "value" : "binary degree"
+            },
+            "d" : {
+              "value" : "one to one"
+            }
+          },
+          "soal" : "jenis Cardinality Ratio yang merupakan dimana hubungan antara entitas pertama dan kedua adalah satu berbanding banyak atau banyak berbanding satu adalah "
+        },
+        "8" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "entitas yang tergantung dari keberadaan entitas lain"
+            },
+            "b" : {
+              "value" : "entitas cadangan"
+            },
+            "c" : {
+              "value" : "entitas yang tergantung dari jumlah entitas lain"
+            },
+            "d" : {
+              "value" : "entitas gabungan dari entitas lain"
+            }
+          },
+          "soal" : "apa yang dimaksud dengan weak entity "
+        },
+        "9" : {
+          "jawaban" : "b",
+          "opsi" : {
+            "a" : {
+              "value" : "entitas yang lebih sederhana"
+            },
+            "b" : {
+              "value" : "weak entity karena tergantung penuh pada entitas pegawai"
+            },
+            "c" : {
+              "value" : "merupakan entitas induk"
+            },
+            "d" : {
+              "value" : "entitas yang banyak berbanding satu"
+            }
+          },
+          "soal" : "entitas tanggungan adalah"
+        },
+        "10" : {
+          "jawaban" : "a",
+          "opsi" : {
+            "a" : {
+              "value" : "No_pem"
+            },
+            "b" : {
+              "value" : "P02"
+            },
+            "c" : {
+              "value" : "Harapan"
+            },
+            "d" : {
+              "value" : "No"
+            }
+          },
+          "soal" : "Ketergantungan fungsional dari tabel Pemasok_barang adalah"
+        }
       }
     }
   }
