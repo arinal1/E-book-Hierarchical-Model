@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
-
+import { FirebaseProvider } from '../../providers/firebase/firebase';
+import { Observable } from 'rxjs/Observable';
 /**
  * Generated class for the MateriPage page.
  *
@@ -15,8 +16,14 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 })
 export class MateriPage {
 	@ViewChild(Slides) slides: Slides;
+  halaman : Observable<any[]>;
+  bab = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    let id = navParams.get("key");
+    this.bab = navParams.get("bab");
+    this.halaman = this.firebaseProvider.getBab(id);
+    console.log(id);
   }
 
 	halamanChange(){

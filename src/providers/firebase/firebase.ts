@@ -10,35 +10,27 @@ import { AngularFireDatabase } from 'angularfire2/database';
   @Injectable()
 
   export class FirebaseProvider {
-    link = this.afd.list('/materi/');
     item = [];
+    bab1 = [];
 
     constructor(public afd : AngularFireDatabase) {
     }
 
     getMateri(){
-      console.log("GET!");
-      this.link.snapshotChanges().subscribe(actions => {
+      console.log("GET MATERI");
+      this.afd.list('/materi/').snapshotChanges().subscribe(actions => {
         actions.forEach(action => {
-          console.log(action.type);
-          console.log(action.key);
-          // console.log(action.payload.val());
           Object.keys(action.payload.val()).forEach(key=> {
             this.item.push(key);
           });
           console.log(this.item[1]);
         });
       });
-      return this.link.snapshotChanges();
+      return this.afd.list('/materi/').snapshotChanges();
     }
 
-    addItem(nama) {
-      console.log("Tambah " + nama);
-      this.link.push({nama: nama});
-    }
-
-    removeItem(key) {
-      console.log("Hapus " + key);
-      this.link.remove(key);
+    getBab(id){
+      console.log("GET BAB " + id);
+      return this.afd.list('/materi/' + id + '/halaman').snapshotChanges();
     }
   }

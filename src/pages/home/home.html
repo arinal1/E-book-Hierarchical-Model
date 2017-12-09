@@ -6,9 +6,9 @@
 
 <ion-content padding>
 
-  <ion-card class="card-menu" *ngFor="let item of materi | async" (click)="goToMateriPage()">
+  <ion-card class="card-menu" *ngFor="let item of materi | async" (click)="goToMateriPage( item.payload.key, item.payload.val().namaBab )">
     <ion-card-header class="judulBab">
-      {{ item.payload.key }}
+      Bab {{ item.payload.key }}
     </ion-card-header>
 
     <ion-card-content>
