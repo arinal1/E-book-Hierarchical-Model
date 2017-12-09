@@ -10,8 +10,8 @@ import { HomequizPage } from '../home-quiz/home-quiz';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = HomequizPage;
+  tab2Root = HomequizPage;
+  tab3Root = AboutPage;
 
   constructor() {
 
