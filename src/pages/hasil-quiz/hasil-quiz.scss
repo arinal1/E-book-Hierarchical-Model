@@ -1,97 +1,102 @@
 page-hasil-quiz {
-	.star-cont {
-		display: flex;
-		position: relative;
-		margin:0 auto;
-		width: 62vw;
-		height: 62vw;
-		border: color($colors, primary) solid 2vw;
-		border-radius: 50%;
+	.scroll-content {
 
-		[id*="star"] {
-			display: -webkit-flex;
+		border-radius: 0 0 10px 10px;
+
+		.star-cont {
 			display: flex;
-			position:absolute;			
-		}
-		
-		#star1{
-			width: 100%;
-			height: 100%;
-		}
+			position: relative;
+			margin:0 auto;
+			width: 62vw;
+			height: 62vw;
+			border: color($colors, primary) solid 2vw;
+			border-radius: 50%;
 
-		#star1:before{
-			justify-content: center;
-			align-content: center;
-			text-align: center;
-			font-size: 40vw;
-			line-height: 1.3;
-			width: 100%;
-			height: 100%;
-		}
-
-		#star2 {
-			top: 7vw;
-			left: 7vw;
-		}
-
-		#star3 {
-			top: 34vw;
-			left: 6vw;
-		}
-
-		#star4 {
-			top: 28vw;
-			left: 40vw;
-		}
-
-		:not(#star1){
-			font-size: 14vw;
-		}
-	}
-
-	.text-cont {
-		h2 {
-			margin: 0 auto;
-			padding-top: 7vw; 
-			font-size: 10vw;
-		}
-
-		p{
-			margin: 0 auto;
-			font-size: 6vw;
-			color: #757575;
-		}
-	}
-
-	#score{
-		font-size: 20vw;
-		color:color($colors, primary);
-	}
-
-	#salah-benar{
-
-		
-		ion-col{
-			display: inline-block;
-			text-align: center;
-			font-size: 10vw;
-
-			#salah-icon {
-				display: inline-block;
-				color: #FB4A56;
+			[id*="star"] {
+				display: -webkit-flex;
+				display: flex;
+				position:absolute;			
+			}
+			
+			#star1{
+				width: 100%;
+				height: 100%;
 			}
 
-			#salah-number{
-				display: inline-block;
+			#star1:before{
+				justify-content: center;
+				align-content: center;
+				text-align: center;
+				font-size: 40vw;
+				line-height: 1.3;
+				width: 100%;
+				height: 100%;
 			}
 
-			#benar-icon {
-				display: inline-block;
-				color: #65CB68;
+			#star2 {
+				top: 7vw;
+				left: 7vw;
 			}
 
-			#benar-number {
+			#star3 {
+				top: 34vw;
+				left: 6vw;
+			}
+
+			#star4 {
+				top: 28vw;
+				left: 40vw;
+			}
+
+			:not(#star1){
+				font-size: 14vw;
+			}
+		}
+
+		.text-cont {
+			h2 {
+				margin: 0 auto;
+				padding-top: 7vw; 
+				font-size: 10vw;
+			}
+
+			p{
+				margin: 0 auto;
+				font-size: 6vw;
+				color: #757575;
+			}
+		}
+
+		#score{
+			font-size: 20vw;
+			color:color($colors, primary);
+		}
+
+		#salah-benar{
+
+			
+			ion-col{
 				display: inline-block;
+				text-align: center;
+				font-size: 10vw;
+
+				#salah-icon {
+					display: inline-block;
+					color: #FB4A56;
+				}
+
+				#salah-number{
+					display: inline-block;
+				}
+
+				#benar-icon {
+					display: inline-block;
+					color: #65CB68;
+				}
+
+				#benar-number {
+					display: inline-block;
+				}
 			}
 		}
 	}
