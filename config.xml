@@ -3,7 +3,7 @@
     <name>E-Book Hierarchical Model</name>
     <description>Ebook app</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Kelompok 4</author>
-    <content original-src="index.html" src="http://212.1.2.4:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -21,6 +21,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
