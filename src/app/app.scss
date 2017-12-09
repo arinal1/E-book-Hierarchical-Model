@@ -15,7 +15,16 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+	.tabbar {
+		border-radius: 0 0 10px 10px;
+	}
+
 	ion-header{
+
+		.toolbar {
+			border-radius: 10px 10px 0 0;
+		}
+
 		.toolbar-background {
 			background: linear-gradient(120deg,  $header-first-color 0%, $header-last-color 100%);
 		}
@@ -27,7 +36,11 @@
 		}
 	}
 
-	// .gradient-bar {
-	// 	//background: linear-gradient(to right,  #f77074, #fa9369);
-	// 	 background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77074), color-stop(100%, #fa9369));
-	// }
+	.content{
+		
+		background: linear-gradient(to bottom,  black 0vh, black 4vh, white 5vh, white 95vh, black 96vh, black 100vh);
+
+		.scroll-content {
+			background: #fff;
+		}
+	}

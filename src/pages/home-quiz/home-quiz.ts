@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FirebaseProvider } from '../../providers/firebase/firebase';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Generated class for the HomeQuizPage page.
@@ -8,23 +10,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
-@Component({
+ @IonicPage()
+ @Component({
   selector: 'page-home-quiz',
   templateUrl: 'home-quiz.html',
 })
-export class HomequizPage {
+ export class HomequizPage {
+  bab : Observable<any[]>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.bab = this.firebaseProvider.getBab();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeQuizPage');
   }
 
-  goToQuizPage(){
+  goToQuizPage(par1){
   	console.log('goToQuizPage');
-  	this.navCtrl.push('QuizPage');
+  	this.navCtrl.push("QuizPage", {key : par1});
   }
 
 }

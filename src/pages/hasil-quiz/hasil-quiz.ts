@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Navbar } from 'ionic-angular';
 
-import { TabsPage } from '../tabs/tabs';
+//import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the HasilQuizPage page.
@@ -48,11 +48,8 @@ export class HasilQuizPage {
     
     ionViewDidEnter() {
       this.navBar.backButtonClick = () => {
-        console.log('bacbuttonclicked');
-        this.navCtrl.setRoot(TabsPage);
+        //this.navCtrl.setRoot(TabsPage);
         this.navCtrl.popToRoot();
       };
-
-      console.log('ionViewDidEnter HasilQuizPage');
     }
 }
