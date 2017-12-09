@@ -14,13 +14,12 @@
 
 
 <ion-content padding>
-	<ion-slides (ionSlideDidChange)="halamanChange()" (ionSlideWillChange)="hideButton()" *ngFor=" let item of halaman | async">
-		<ion-slide>
+	<ion-slides (ionSlideDidChange)="halamanChange()" (ionSlideWillChange)="hideButton()" >
+		<ion-slide *ngFor=" let item of isiHalaman | async">
 			<p padding>
-				{{item}}
+				{{ item.payload.val() }}
 			</p>
 		</ion-slide>
-
 	</ion-slides>
 	
 	<p id="halaman">
