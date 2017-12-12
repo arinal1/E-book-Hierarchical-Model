@@ -22,10 +22,6 @@ import { Observable } from 'rxjs/Observable';
     this.bab = this.firebaseProvider.getBab();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeQuizPage');
-  }
-
   goToQuizPage(par1){
   	console.log('goToQuizPage');
   	this.navCtrl.push("QuizPage", {key : par1});

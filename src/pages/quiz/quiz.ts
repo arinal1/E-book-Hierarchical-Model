@@ -27,29 +27,26 @@ import { Observable } from 'rxjs/Observable';
     this.kuis = this.firebaseProvider.getKuis(this.id);
   }
 
-  ngAfterViewInit() {
-    	// Component content has been initialized  	
-      // let backBtn = document.getElementsByClassName("back-btn");
-      // let nextBtn = document.getElementsByClassName("next-btn");
+  ngAfterViewChecked() {
+      
+      let backBtn = document.getElementsByClassName("back-btn") as HTMLCollectionOf<HTMLElement>;
+      let nextBtn = document.getElementsByClassName("next-btn") as HTMLCollectionOf<HTMLElement>;
 
-      // let lastNextBtn = nextBtn[nextBtn.length - 1];
-      // console.log(backBtn);
-      // console.log(backBtn.item(0));;
+      if (backBtn.length && nextBtn.length > 0 ) {
+      
+        let lastNextBtn = nextBtn[nextBtn.length - 1];
+       
+        backBtn.item(0).style.display = "none";
+        lastNextBtn.style.backgroundColor = "#E81209";
+        lastNextBtn.innerHTML = "Submit";
 
-     //  backBtn.item(0).style.display = "none";
-     //  lastNextBtn.style.backgroundColor = "#E81209";
-     //  lastNextBtn.innerHTML = "Submit";
+        lastNextBtn.addEventListener('click', (event) => {
+          this.navCtrl.push("HasilQuizPage");
+        });
+      }
+  }
 
-     //  lastNextBtn.addEventListener('click', (event) => {
-     //   this.navCtrl.push("HasilQuizPage");
-     // });
-   }
-
-   ionViewDidLoad() {
-     console.log('ionViewDidLoad QuizPage');
-   }
-
-   nextSlide():void{
+  nextSlide():void{
     this.slides.slideNext();
   }
 

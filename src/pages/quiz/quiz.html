@@ -9,59 +9,39 @@
 		<ion-slide class="soal" *ngFor=" let item of kuis | async">
 			<ion-row >
 				<ion-col class="quiz-cont" padding>
-					<p>{{ item.payload.val().soal }}</p>
+					<p text-left>{{ item.payload.val().soal }}</p>
 					<p class="nomer-quiz" text-right>{{ item.payload.key }}<span>/</span>{{ (kuis | async)?.length }}</p>
 				</ion-col>
 			</ion-row>
 			<ion-row >
 				<ion-col class="jawaban-quiz-cont" padding>
-					<ion-list radio-group [(ngModel)]="answer">
+					<ion-list radio-group no-lines >
 						<ion-item>
 							<ion-label>
 								{{ item.payload.val().opsi.a.value }}
 							</ion-label>
-							<ion-radio class="radio" value="A" (click)="answerFunc(answer)">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										A
-									</div>
-								</div>
+							<ion-radio class="radio-a" value="A" item-left (click)="answerFunc(answer)">
 							</ion-radio>
 						</ion-item>
 						<ion-item>
 							<ion-label>
 								{{ item.payload.val().opsi.b.value }}
 							</ion-label>
-							<ion-radio class="radio" value="B" (click)="answerFunc(answer)">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										B
-									</div>
-								</div>
+							<ion-radio class="radio-b" value="B" item-left (click)="answerFunc(answer)">
 							</ion-radio>
 						</ion-item>
 						<ion-item>
 							<ion-label>
 								{{ item.payload.val().opsi.c.value }}
 							</ion-label>
-							<ion-radio class="radio" value="C" (click)="answerFunc(answer)">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										C
-									</div>
-								</div>
+							<ion-radio class="radio-c" value="C" item-left (click)="answerFunc(answer)">
 							</ion-radio>
 						</ion-item>
 						<ion-item>
 							<ion-label>
 								{{ item.payload.val().opsi.d.value }}
 							</ion-label>
-							<ion-radio class="radio" value="D" (click)="answerFunc(answer)">
-								<div class="radio-icon">
-									<div class="radio-inner">
-										D
-									</div>
-								</div>
+							<ion-radio class="radio-d" value="D" item-left (click)="answerFunc(answer)">
 							</ion-radio>
 						</ion-item>
 					</ion-list>
