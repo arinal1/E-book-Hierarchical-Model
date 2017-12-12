@@ -19,8 +19,8 @@ import { Observable } from 'rxjs/Observable';
 
    @ViewChild(Slides) slides : Slides;
    kuis : Observable<any[]>;
-   opsis = this.firebaseProvider.opsi;
    id = "";
+   answer = [];
 
    constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
     this.id = navParams.get("key");
@@ -29,32 +29,36 @@ import { Observable } from 'rxjs/Observable';
 
   ngAfterViewInit() {
     	// Component content has been initialized  	
+      // let backBtn = document.getElementsByClassName("back-btn");
+      // let nextBtn = document.getElementsByClassName("next-btn");
 
-     //  let backBtn = document.getElementsByClassName("back-btn") as HTMLCollectionOf<HTMLElement>;
-     //  let nextBtn = document.getElementsByClassName("next-btn") as HTMLCollectionOf<HTMLElement>;
+      // let lastNextBtn = nextBtn[nextBtn.length - 1];
+      // console.log(backBtn);
+      // console.log(backBtn.item(0));;
 
-     //  let lastNextBtn = nextBtn[nextBtn.length - 1];
-
-     //  backBtn[0].style.display = "none";
+     //  backBtn.item(0).style.display = "none";
      //  lastNextBtn.style.backgroundColor = "#E81209";
      //  lastNextBtn.innerHTML = "Submit";
 
      //  lastNextBtn.addEventListener('click', (event) => {
      //   this.navCtrl.push("HasilQuizPage");
      // });
+   }
 
-    }
+   ionViewDidLoad() {
+     console.log('ionViewDidLoad QuizPage');
+   }
 
-    ionViewDidLoad() {
-    	console.log('ionViewDidLoad QuizPage');
-    }
-
-    nextSlide():void{
-      this.slides.slideNext();
-    }
-
-    prevSlide():void{
-      this.slides.slidePrev();
-    }
-
+   nextSlide():void{
+    this.slides.slideNext();
   }
+
+  prevSlide():void{
+    this.slides.slidePrev();
+  }
+
+  answerFunc(jawab){
+    console.log(jawab);
+    // this.answer[0] = jawab;
+  }
+}

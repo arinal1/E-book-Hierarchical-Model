@@ -10,17 +10,17 @@
 			<ion-row >
 				<ion-col class="quiz-cont" padding>
 					<p>{{ item.payload.val().soal }}</p>
-					<p class="nomer-quiz" text-right>1<span>/</span>20</p>
+					<p class="nomer-quiz" text-right>{{ item.payload.key }}<span>/</span>{{ (kuis | async)?.length }}</p>
 				</ion-col>
 			</ion-row>
 			<ion-row >
 				<ion-col class="jawaban-quiz-cont" padding>
-					<ion-list radio-group>
+					<ion-list radio-group [(ngModel)]="answer">
 						<ion-item>
 							<ion-label>
 								{{ item.payload.val().opsi.a.value }}
 							</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'A'">
+							<ion-radio class="radio" value="A" (click)="answerFunc(answer)">
 								<div class="radio-icon">
 									<div class="radio-inner">
 										A
@@ -32,7 +32,7 @@
 							<ion-label>
 								{{ item.payload.val().opsi.b.value }}
 							</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'B'">
+							<ion-radio class="radio" value="B" (click)="answerFunc(answer)">
 								<div class="radio-icon">
 									<div class="radio-inner">
 										B
@@ -44,7 +44,7 @@
 							<ion-label>
 								{{ item.payload.val().opsi.c.value }}
 							</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'C'">
+							<ion-radio class="radio" value="C" (click)="answerFunc(answer)">
 								<div class="radio-icon">
 									<div class="radio-inner">
 										C
@@ -56,7 +56,7 @@
 							<ion-label>
 								{{ item.payload.val().opsi.d.value }}
 							</ion-label>
-							<ion-radio class="radio" ng-model="choice" ng-value="'D'">
+							<ion-radio class="radio" value="D" (click)="answerFunc(answer)">
 								<div class="radio-icon">
 									<div class="radio-inner">
 										D
@@ -65,8 +65,7 @@
 							</ion-radio>
 						</ion-item>
 					</ion-list>
-
-					<button class="Back-btn" ion-button color="primary" round (click)="prevSlide()">Back</button>
+					<button class="back-btn" ion-button color="primary" round (click)="prevSlide()">Back</button>
 					<button class="next-btn" ion-button color="primary" round (click)="nextSlide()">Next</button>
 				</ion-col>
 			</ion-row>
