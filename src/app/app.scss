@@ -23,6 +23,17 @@
 
 		.toolbar {
 			border-radius: 10px 10px 0 0;
+			color: white;
+
+			button {
+				color: white;
+			}
+		}
+
+		.toolbar-wp {
+			button {
+				color: default;
+			}
 		}
 
 		.toolbar-background {
