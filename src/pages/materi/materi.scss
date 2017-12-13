@@ -23,6 +23,7 @@ page-materi {
 
 		height: 15vh;
 		background: white;
+		border-radius: 0 0 10px 10px;
 
 		ion-fab[bottom]{
 			bottom: 18px;
@@ -35,6 +36,7 @@ page-materi {
 		#halaman {
 			margin: 0 auto;
 			font-size: 2em;
+			line-height: 2.48;
 		}
 	}
 }
